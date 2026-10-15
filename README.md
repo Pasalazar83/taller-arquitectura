@@ -4,7 +4,7 @@ Repositorio del taller de Arquitectura de Software (UMB). Sirve para simular un 
 
 | Archivo | Para qué sirve |
 |---|---|
-| `index.html` | El "monolito". Trae malos olores **intencionales** (CSS mal anidado, JavaScript en línea, texto duplicado) para que SonarCloud los reporte como deuda técnica. |
+| `index.html` | El "monolito". Contiene *code smells* **intencionales** (CSS mal anidado, JavaScript en línea, código duplicado) para que SonarCloud los reporte como deuda técnica. |
 | `.github/workflows/ci.yml` | Pipeline de CI/CD en GitHub Actions: `build` → `test` → despliegue simulado. Corre en cada push a `main`. |
 | `main.tf` | Infraestructura como código (Terraform): VPC, regla de firewall y una VM `e2-micro` en Google Cloud. Solo se ejecutan `terraform init` y `terraform plan`, nunca `apply`. |
 
